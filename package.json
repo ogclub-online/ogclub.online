@@ -1,0 +1,24 @@
+{
+  "name": "ogclub-online",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static site for the OGPass membership contract on Ethereum mainnet (ogclub.online).",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "verify:root": "node scripts/verify-root.mjs",
+    "check:bundle": "node scripts/check-bundle.mjs"
+  },
+  "dependencies": {
+    "@openzeppelin/merkle-tree": "^1.0.8",
+    "viem": "^2.31.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
